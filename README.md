@@ -1,2 +1,3 @@
+[//]: # (Created by Raymond Lui, 19 September 2021)
 # cptlab.github.io
-Repository for the CPT Lab website
+Website for the Computational Pharmacology and Toxicology Laboratory
