@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<! Created by Raymond Lui, 19 September 2021>
 <html>
-  <head>
-    <title>CPT Lab</title>
-  </head>
-  <body>
-    <h1>Computational Pharmacology and Toxicology Laboratory</h1>
-    <p>Website under construction, please come back soon!</p>
-  </body>
+<head>
+	<title>CPT Lab</title>
+	<link rel="icon" href="img/cptlab_icon.png">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header class="header">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<a href='index.html'><img src="img/cptlab_logo.png"></a>
+			</div>
+
+			<ul class="nav-links">
+				<li><a href="index.html" id="current">Research</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="tools.html">Tools</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<div class="splash-container">
+			<div class="particles-js" id="particles-js">
+				<script src="js/particles.js"></script>
+				<script src="js/app.js"></script>
+			</div>
+
+			<div class="splash-window">
+				<div class="splash-window-bar">
+					<div class="splash-window-bar-buttons splash-window-bar-button-red"></div>
+					<div class="splash-window-bar-buttons splash-window-bar-button-yellow"></div>
+					<div class="splash-window-bar-buttons splash-window-bar-button-green"></div>
+					<p class="splash-window-bar-text">Hello, World!</p>
+				</div>
+				<div class="splash-window-main">
+					<h1 class="splash-window-main-title">Computational Pharmacology<br>and Toxicology Laboratory</h1>
+					<p class="splash-window-main-subtitle">&gt;&gt;&gt; Where biomedical science meets scientific computing</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="research-topics-container">
+			<div class="rt-title">
+				<h1>Our research topics</h1>
+			</div>
+			<div class="rt-ist-image rt-images">
+				<img src="img/cptlab_in_silico_toxicology.png">
+			</div>
+			<div class="rt-ist-text rt-text">
+				<h2><i>In silico</i> toxicology</h2>
+				<p>Our primary research focus is understanding the adverse effects of chemicals on living organisms. We employ computer-based <i>in silico</i> methods to predict the interactions between cellular components and potentially toxic chemicals such as medications, industrial substances, and environmental pollutants. These computations reveal molecular properties which are modelled to a variety of adverse outcomes including cancer, immune sensitisation, and endocrine disruption.</p>
+			</div>
+			<div class="rt-cadd-image rt-images">
+				<img src="img/cptlab_computer_aided_drug_design.png">
+			</div>
+			<div class="rt-cadd-text rt-text">
+				<h2>Computer-aided drug design</h2>
+				<p>The knowledge we gain about how chemicals interact with biological systems enables us to adapt our research to design molecules with therapeutic potential. We utilise <i>in silico</i> methods to generate drug candidate structures and predict their properties to quantify how well they work. We have successfully applied our techniques on various drug classes including anti-malarials and kinase inhibitors.</p>
+			</div>
+			<div class="rt-trs-image rt-images">
+				<img src="img/cptlab_translational_regulatory_science.png">
+			</div>
+			<div class="rt-trs-text rt-text">
+				<h2>Translational and regulatory science</h2>
+				<p>A major element of our work is translating our basic research into practical tools that support real world decisions. We actively collaborate with regulatory scientists to better understand which substances should be prioritised for risk assessment. We also participate in international predictive toxicology and drug design challenges to validate our techniques amongst academic and industry standards.</p>
+			</div>
+		</div>
+
+		<div class="research-methods-container">
+			<div class="rm-title">
+				<h1>Our research methods</h1>
+			</div>
+			<div class="rm-ml rm-box graph-paper">
+			  <div class="rm-ml-title">
+				<h2>Machine learning</h2>
+			  </div>
+			  <div class="rm-ml-image rm-images">
+				<img src="img/cptlab_machine_learning.png">
+			  </div>
+			  <div class="rm-ml-text">
+				<p>Cheminformatics and machine learning are used to search large chemical databases and extract quantitative structure-activity relationships between molecular properties and biological activities.</p>
+			  </div>
+			</div>
+			<div class="rm-mm rm-box graph-paper">
+			  <div class="rm-mm-title">
+				<h2>Molecular modelling</h2>
+			  </div>
+			  <div class="rm-mm-image rm-images">
+				<img src="img/cptlab_molecular_modelling.png">
+			  </div>
+			  <div class="rm-mm-text">
+				<p>Theoretical and computational chemistry are used to resolve molecular structures with high accuracy and calculate physical, chemical, and electronic properties that drive bioactivity.</p>
+			  </div>
+			</div>
+			<div class="rm-hpc rm-box graph-paper">
+			  <div class="rm-hpc-title">
+				<h2>High-performance computing</h2>
+			  </div>
+			  <div class="rm-hpc-image rm-images">
+				<img src="img/cptlab_high_performance_computing.png">
+			  </div>
+			  <div class="rm-hpc-text">
+				<p>We maintain a network of workstations, featuring high end desktop processors and professional graphics cards awarded by NVIDIA®, capable of accelerating our computations and enabling more experiments to be conducted.</p>
+			  </div>
+			</div>
+		  </div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<img class="footer-images" src="img/cptlab_logo_white-transparent.png">
+			<a href="contact.html" class="contact-button">Contact</a>
+		</div>
+
+	</footer>
+</body>
 </html>
