@@ -477,7 +477,45 @@ body {
 
 
 
+/* PUBLICATIONS */
 
+.publications-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"publications-area";
+}
+
+.publications-container li {
+	padding: 30px;
+}
+
+
+/* TOOLS */
+
+.tools-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"tools-area";
+}
+
+.tools-container li {
+	padding: 30px;
+}
+
+/* CONTACT */
+
+.contact-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"contact-area";
+	padding: 50px;
+}
 
 
 
