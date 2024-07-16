@@ -501,6 +501,7 @@ body {
 	grid-template-rows: 1fr;
 	grid-template-areas:
 		"tools-area";
+	flex: 1;
 }
 
 .tools-container li {
