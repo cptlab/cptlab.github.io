@@ -51,6 +51,11 @@ git add .
 git commit -m "Describe update here"
 git push origin main
 
+Or if changes are made on Github you must:
+git pull origin main
+
+If there are changes on both sides they have to be resolved.
+
 All apps are run from the apps directory, they are linked to via tools.html
 
 Note: I removed the DNS records pointing to Gituhub pages IP's 	185.199.108.153, (109, 110, 110) from the A record and removed the CNAME file from githup pages.
