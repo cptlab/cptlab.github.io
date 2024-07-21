@@ -10,7 +10,9 @@ Site Design: Raymond Lui, 2023
 
 The website is now fully cloned to github at https://github.com/cptlab/cptlab.github.io.
 
-All model deployments are now listed on /tools.html.
+The root directory of the site is /srv on the server.
+
+All model deployments are now listed on /srv/tools.html.
 
 They can be linked to via <p><a href="/Model1">Model 1</a></p> a slash.
 
