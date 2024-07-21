@@ -1,0 +1,59 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model 2</title>
+    <link rel="icon" type="image/png" href="/Model2/static/cptlab_icon.png?">
+    <style>
+        /* CSS styles to position the logo */
+        body {
+            padding-top: 100px; /* Adjust padding to create space for the logo */
+            font-family: Arial, sans-serif; /* Example: Set font family */
+        }
+
+        #logo {
+            width: 200px;
+            position: fixed;
+            top: 10px; /* Adjust top position to leave space */
+            left: 10px; /* Adjust left position to leave space */
+            z-index: 1000; /* Ensure logo stays above other content */
+        }
+
+        /* Additional styles for content */
+        .container {
+            margin-top: 20px; /* Adjust margin to create space below the logo */
+            padding: 20px; /* Example: Add padding to content */
+            background-color: #f0f0f0; /* Example: Background color for content */
+            border: 1px solid #ccc; /* Example: Border for content */
+            border-radius: 5px; /* Example: Rounded corners */
+        }
+
+        h1 {
+            color: #333; /* Example: Text color */
+        }
+
+        p {
+            color: #666; /* Example: Text color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <a href="https://cptlab.au/">
+        <img id="logo" src="/Model2/static/logo.jpg" alt="Logo">
+    </a>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Model 2 SMILES Input Form</h1>
+        <p>Put a SMILES string in the box and press Predict to return the ASCII values for each character.</p>
+        <p><a href="http://dev-toxi.sydney.edu.au">Back to Model List</a>
+        <form method="POST" action="/Model2/predict">
+            <label for="smiles">Enter a SMILES string:</label><br>
+            <input type="text" id="smiles" name="smiles" required><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
+
