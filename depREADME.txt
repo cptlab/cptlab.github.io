@@ -53,6 +53,12 @@ git push origin main
 
 All apps are run from the apps directory, they are linked to via tools.html
 
+Note: I removed the DNS records pointing to Gituhub pages IP's 	185.199.108.153, (109, 110, 110) from the A record and removed the CNAME file from githup pages.
+And removed the _github-challenge-cptlab-org txt file from the DNS.
+
+
+
+
 ├── apps
 │   ├── app1
 │   │   ├── flask_app1.py
