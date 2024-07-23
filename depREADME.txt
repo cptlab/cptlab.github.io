@@ -12,9 +12,11 @@ The website is now fully cloned to github at https://github.com/cptlab/cptlab.gi
 
 The root directory of the site is /srv on the server.
 
+All flask apps are in /srv/apps/app[X] and call model.py in the local directory and specify an access port.
+
 All model deployments are now listed on /srv/tools.html.
 
-They can be linked to via <p><a href="/Model1">Model 1</a></p> a slash.
+They can be linked to via <p><a href="/Model1">Model 1</a></p> made on the fly from /templates/index.html.
 
 
 
@@ -24,7 +26,7 @@ They can be linked to via <p><a href="/Model1">Model 1</a></p> a slash.
                       
 The location and PORT (5000 etc) of the deployment is determined in:
 
-/etc/nginx/conf.d/cptlab-web.conf
+/etc/nginx/conf.d/cptlab-web.conf (must match port specified in flask_app[X].py).
 
 Remember to sudo systemctl restart nginx
 
