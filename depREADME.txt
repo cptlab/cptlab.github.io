@@ -42,9 +42,9 @@ Here is a list of tasks for making the deployment persistent:
 0. Make a wsgi file in /apps/app[X] that calls the flask_app[X].py file.
 1. Edit cptlab-web.conf file as above
 2. Create file in /etc/systemd/system such as /etc/systemd/system/flask_app1.service
-3. Enable the new service sudo systemctl enable flask_app1
+3. Enable the new service sudo systemctl enable flask_app1.service
 4. Reload the daemon sudo systemctl daemon-reload
-4. Start the new service sudo systemctl restart flask_app1
+4. Start the new service sudo systemctl restart flask_app1.service
 
 The site is set up to run from /srv and this is set as "main" on cptlab.github.io
 Once changes are made to the site you can send them to github via:
