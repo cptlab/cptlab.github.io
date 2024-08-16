@@ -18,6 +18,8 @@ All model deployments are now listed on /srv/tools.html.
 
 They can be linked to via <p><a href="/Model1">Model 1</a></p> made on the fly from /templates/index.html.
 
+All html files in /templates determine the look of the page for individual tools.
+
 
 
        __ ___         
@@ -35,7 +37,7 @@ Remember to sudo systemctl restart nginx
  /__ | | |\ |  |  /  / \ |_) |\ | 
  \_| |_| | \| _|_ \_ \_/ | \ | \| 
                                   
-In order to make these deployments persistent we have to run them via an /etc/services file which calls gunicorn (remember to change the port!)
+In order to make these deployments persistent (auto restart on boot) we have to run them via an /etc/services file which calls gunicorn (remember to change the port!)
 
 Here is a list of tasks for making the deployment persistent:
 
@@ -50,7 +52,7 @@ The site is set up to run from /srv and this is set as "main" on cptlab.github.i
 Once changes are made to the site you can send them to github via:
 cd /srv/
 git add .
-git commit -m "Describe update here"
+git commit -m "Update readme"
 git push origin main
 
 Or if changes are made on Github you must:
@@ -60,7 +62,7 @@ If there are changes on both sides they have to be resolved.
 
 Github authentication is via personal access token, it must be renewed every so often.
 
-All apps are run from the apps directory, they are linked to via tools.html
+All apps are run from their apps directory and are linked to via tools.html
 
 Note: I removed the DNS records pointing to Gituhub pages IP's 	185.199.108.153, (109, 110, 110) from the A record and removed the CNAME file from githup pages.
 And removed the _github-challenge-cptlab-org txt file from the DNS.
