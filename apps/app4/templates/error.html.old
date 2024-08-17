@@ -1,8 +1,7 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Model 4</title>
+    <title>Error</title>
     <link rel="icon" type="image/png" href="/Model4/static/cptlab_icon.png?">
     <style>
         /* CSS styles to position the logo */
@@ -38,22 +37,9 @@
     </style>
 </head>
 <body>
-    <!-- Logo -->
-    <a href="https://cptlab.au/">
-        <img id="logo" src="/Model4/static/logo.jpg" alt="Logo">
-    </a>
-
-    <!-- Main content -->
-    <div class="container">
-        <h1>Model 4: Draw a molecule or drug by name</h1>
-        <p>Put a drug or molecule name (e.g. aspirin) in the box, press Predict to return an image of the molecule.</p>
-        <p><a href="../tools.html">Back to Model List</a>
-        <form method="POST" action="/Model4/predict">
-            <label for="name">Enter molecule name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <input type="submit" value="Predict">
-        </form>
-    </div>
+    <h1>An Error Occurred</h1>
+    <p>{{ error_message }}</p>
+    <a href="{{ url_for('index', _external=True) }}/Model4">Back to input form</a>
 </body>
 </html>
 
