@@ -69,7 +69,6 @@ And removed the _github-challenge-cptlab-org txt file from the DNS.
 
 
 
-
 ├── apps
 │   ├── app1
 │   │   ├── flask_app1.py
@@ -127,6 +126,43 @@ And removed the _github-challenge-cptlab-org txt file from the DNS.
 │   │   │   ├── Test_data.csv
 │   │   │   └── Xu2012.csv
 │   │   └── wsgi.py
+│   ├── app4
+│   │   ├── cleanup.py
+│   │   ├── flask_app4.py
+│   │   ├── model.py
+│   │   ├── __pycache__
+│   │   │   ├── flask_app2.cpython-312.pyc
+│   │   │   ├── flask_app4.cpython-312.pyc
+│   │   │   ├── model.cpython-311.pyc
+│   │   │   ├── model.cpython-312.pyc
+│   │   │   └── wsgi.cpython-312.pyc
+│   │   ├── static
+│   │   │   ├── cptlab_icon.png
+│   │   │   ├── logo.jpg
+│   │   │   └── temp
+│   │   │       ├── 4-amino-2,6-dinitrotoluene.png
+│   │   │       ├── aldosterone.png
+│   │   │       ├── Benzaldehyde.png
+│   │   │       ├──  benzenecarbaldehyde.png
+│   │   │       ├── BMS-189453.png
+│   │   │       ├── carbamate.png
+│   │   │       ├── cyanocobalamin.png
+│   │   │       ├── Lsd.png
+│   │   │       ├── menthol.png
+│   │   │       ├── nitrate.png
+│   │   │       ├── N,N-Diethylaniline hydrochloride.png
+│   │   │       ├── retinoic acid.png
+│   │   │       ├── retinol.png
+│   │   │       ├── semaglutide.png
+│   │   │       ├── Spironolactone.png
+│   │   │       └── sucrose.png
+│   │   ├── templates
+│   │   │   ├── error.html
+│   │   │   ├── error.html.old
+│   │   │   ├── index.html
+│   │   │   └── result.html
+│   │   ├── test_model.py
+│   │   └── wsgi.py
 │   ├── gunicorn_config.py
 │   └── __pycache__
 │       ├── flask_app1.cpython-311.pyc
@@ -135,6 +171,7 @@ And removed the _github-challenge-cptlab-org txt file from the DNS.
 ├── contact.html
 ├── css
 │   └── styles.css
+├── depREADME.txt
 ├── img
 │   ├── cptlab_computer_aided_drug_design.png
 │   ├── cptlab_high_performance_computing.png
@@ -153,7 +190,6 @@ And removed the _github-challenge-cptlab-org txt file from the DNS.
 │   └── particles.js
 ├── publications.html
 ├── README.md
-├── README.txt
 └── tools.html
 
 
