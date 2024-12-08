@@ -11,7 +11,8 @@ def index():
 def predict():
     smiles = request.form['smiles']
     prediction = run_prediction_model(smiles)
-    return render_template('result.html', prediction=prediction)
+    result = "Mutagen" if prediction > 0.5 else "Non-mutagen"
+    return render_template('result.html', prediction=result)
 
 
 if __name__ == '__main__':
