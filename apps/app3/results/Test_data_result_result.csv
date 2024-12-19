@@ -1,0 +1,27 @@
+Serial Id ,ANEI No.,Registration No. ,"Ames
+Result",CAS#,Chemical_Name,SMILES,Mol Weight,Formula,ANEI_Phase,Prediction,result
+10,5-1012,10,C,52238-92-3,PigmentRed242,FC(F)(F)C1=CC(N\N=C2/C(=O)C(=CC3=CC=CC=C23)C(=O)NC2=CC(Cl)=C(NC(=O)C3=CC4=CC=CC=C4\C(=N/NC4=C(Cl)C=CC(=C4)C(F)(F)F)C3=O)C=C2Cl)=C(Cl)C=C1,930.47,C42H22Cl4F6N6O4,1,9.920256283102448e-11,930.476
+14,2-(7)-264,11,C,6923-22-4,azodrin,CNC(=O)\C=C(/C)OP(=O)(OC)OC,223.165,C7H14NO5P,1,0.999998927116394,223.16499999999996
+11,8-(2)-1131,12,C,36734-19-7,iprodione,CC(C)NC(=O)N1CC(=O)N(C1=O)C1=CC(Cl)=CC(Cl)=C1,330.17,C13H13Cl2N3O3,1,3.134384087388753e-06,330.17100000000005
+9,8-(4)-919,13,C,98167-44-3,"5-[7-(3-chloro-5-formyl-2,6-dihydroxy-4-methylphenyl)-1,5-dimethyl-1,5-heptadienyl]-2,2-dimethyloxolan-3-one",C\C(CC\C=C(\C)C1CC(=O)C(C)(C)O1)=C/CC1=C(O)C(C=O)=C(C)C(Cl)=C1O,420.93,C23H29ClO5,3,5.2037431891440384e-18,420.9330000000001
+8,7-(4)-688,14,C,26166-39-2,"5-chloro-2,4-dihydroxy-6-methyl-3-[(2E,4E)-3-methyl-5-(1,2,6-trimethyl-3-oxocyclohexyl)penta-2,4-dienyl]benzaldehyde",CC1CCC(=O)C(C)C1(C)\C=C\C(\C)=C\CC1=C(O)C(C=O)=C(C)C(Cl)=C1O,404.93,C23H29ClO4,1,3.004771862062314e-28,404.9340000000001
+18,8-(7)-690,17,C,72015-26-0,"2-[2-(4-butoxyphenyl)ethenyl]-5-(trichloromethyl)-1,3,4-oxadiazole",CCCCOC1=CC=C(C=CC2=NN=C(O2)C(Cl)(Cl)Cl)C=C1,361.65,C15H15Cl3N2O2,1,1.0,361.65599999999995
+22,8-(1)-1687,18,C,73674-58-5,"2,5-pyrrolidinedione,1-[(phenylsulfonyl)oxy]-",O=C1CCC(=O)N1OS(=O)(=O)C1=CC=CC=C1,255.24,C10H9NO5S,1,0.9054036140441896,255.251
+17,8-(3)-498,23,C,21725-46-2,cyanazine,CCNC1=NC(NC(C)(C)C#N)=NC(Cl)=N1,240.7,C9H13ClN6,1,2.611015323509435e-16,240.698
+19,4-(7)-1296,25,C,68516-73-4,"N,N'-p-phenylenebis(2-(2,5-dicarbomethoxyphenyl)azo)acetoacetamide",COC(=O)c1ccc(C(=O)OC)c(c1)\N=N\C(C(C)=O)C(=O)Nc1ccc(NC(=O)C(\N=N\c2cc(ccc2C(=O)OC)C(=O)OC)C(C)=O)cc1,716.66,C34H32N6O12,1,8.736721568425311e-09,716.6600000000002
+37,4-(7)-1299,26,C,84-62-8,diphenylphthalate,O=C(OC1=CC=CC=C1)C1=CC=CC=C1C(=O)OC1=CC=CC=C1,318.328,C20H14O4,1,2.2688982426188886e-06,318.328
+39,4-(14)-139,27,C,824-94-2,4-methoxybenzylchloride,COC1=CC=C(CCl)C=C1,156.61,C8H9ClO,1,5.122593938722275e-05,156.61200000000002
+36,8-(2)-1134,29,C,92683-20-0,"dodecyl3-(2-(3-benzyl-4-ethoxy-2,5-dioxoimidazolidin-1-yl)-4,4-dimethyl-3-oxovaleramido)-4-chlorobenzoate",CCCCCCCCCCCCOC(=O)C1=CC(NC(=O)C(N2C(=O)C(OCC)N(CC3=CC=CC=C3)C2=O)C(=O)C(C)(C)C)=C(Cl)C=C1,698.3,C38H52ClN3O7,1,4.26536487192481e-29,698.301
+40,4-(7)-1300,30,C,94726-76-8,?-bromo-2'-chloro-5'-dodecyloxycarbonyl-?-pivaloylacetanilide,CCCCCCCCCCCCOC(=O)C1=CC(NC(=O)C(Br)C(=O)C(C)(C)C)=C(Cl)C=C1,544.96,C26H39BrClNO4,1,3.217049890369417e-11,544.9580000000002
+28,8-(2)-1135,31,C,70950-45-7,alpha-(4-methoxybenzoyl)-alpha-(1-benzyl-5-ethoxyhydantion)-2-chloro-5-dodecyloxycarbonylacetanilide,CCCCCCCCCCCCOC(=O)C1=CC(NC(=O)C(N2C(=O)C(OCC)N(CC3=CC=CC=C3)C2=O)C(=O)C2=CC=C(OC)C=C2)=C(Cl)C=C1,748.31,C41H50ClN3O8,1,1.1135330196878454e-27,748.3170000000001
+32,8-(2)-1133,32,C,95050-16-1,"?-(1-benzyl-5-ethoxyhydantoin-3-yl)-2'-chloro-5'-[2-(2,4-di-tert-pentylphenoxy)butanoylamino]-?-pivaloylacetanilide",CCOC1N(CC2=CC=CC=C2)C(=O)N(C(C(=O)NC2=CC(NC(=O)C(CC)OC3=CC=C(C=C3C(C)(C)CC)C(C)(C)CC)=CC=C2Cl)C(=O)C(C)(C)C)C1=O,803.44,C45H59ClN4O7,1,1.6405747652886944e-26,803.4409999999998
+27,4-(7)-1297,33,C,65145-67-7,2'-chloro-5'-dodecyloxycarbonyl-?-pivaloylacetanilide,CCCCCCCCCCCCOC(=O)C1=CC(NC(=O)CC(=O)C(C)(C)C)=C(Cl)C=C1,466.06,C26H40ClNO4,1,2.672178613365856e-13,466.06200000000024
+38,8-(2)-1136,34,C,109-08-0,2-methylpyrazine,CC1=NC=CN=C1,94.117,C5H6N2,1,5.771000246568292e-07,94.11699999999999
+34,8-(2)-1132,35,C,19847-12-2,cyanopyrazine,N#CC1=NC=CN=C1,105.1,C5H3N3,1,6.70002654702337e-14,105.09999999999998
+33,4-(7)-1298,37,C,51431-08-4,(R)-(2-chloro-1-(4-hydroxyphenyl)-2-oxoethyl)ammoniumchloride,Cl.N[C@@H](C(Cl)=O)C1=CC=C(O)C=C1,222.07,C8H9Cl2NO2,1,0.9614897966384888,222.07100000000003
+31,8-(3)-499,39,C,3147-75-9,2-(2-hydroxy-5-tert-octylphenyl)benzotriazole,CC(C)(C)CC(C)(C)C1=CC(N2N=C3C=CC=CC3=N2)=C(O)C=C1,323.44,C20H25N3O,1,2.921470287908789e-10,323.44000000000005
+50,8-(3)-500,45,C,40601-76-1,"1,3,5-tris(4-tert-butyl-3-hydroxy-2,6-dimethylbenzyl)-1,3,5-triazinane-2,4,6-trione",CC1=CC(=C(O)C(C)=C1CN1C(=O)N(CC2=C(C)C(O)=C(C=C2C)C(C)(C)C)C(=O)N(CC2=C(C)C(O)=C(C=C2C)C(C)(C)C)C1=O)C(C)(C)C,699.933,C42H57N3O6,1,0.000324894557707,699.933
+58,2-(2)-181,47,C,50862-24-3,[3-[dimethyl-[2-(2-methylprop-2-enoyloxy)ethyl]azaniumyl]-2-hydroxypropyl]-trimethylazanium dichloride,[Cl-].[Cl-].CC(=C)C(=O)OCC[N+](C)(C)CC(O)C[N+](C)(C)C,345.31,C14H30Cl2N2O3,1,3.2904630131724844e-08,345.3110000000001
+52,8-(1)-1689,50,C,73211-95-7,"1,5-bis(tetrabromophthalimidyl)naphthalene",BrC1=C(Br)C(Br)=C(Br)C2=C1C(=O)N(C2=O)C1=CC=CC2=C1C=CC=C2N1C(=O)C2=C(C1=O)C(Br)=C(Br)C(Br)=C2Br,1049.576,C26H6Br8N2O4,1,1.034284324852308e-09,1049.576
+49,2-(6)-1073,51,C,5205-93-6,N-(3-(dimethylamino)propyl)methacrylamide,CN(C)CCCNC(=O)C(C)=C,170.256,C9H18N2O,1,0.9750468730926514,170.25599999999997
+45,8-(4)-921,52,C,32483-51-5,4-[(E)-5-ethoxycarbonyl-3-methyl-2-pentenyl]-3-hydroxy-5-methoxy-6-methylphthalide,[H]\C(CC1=C(OC)C(C)=CC2=C1C(O)OC2=O)=C(\C)CCC(=O)OCC,348.395,C19H24O6,1,0.2016714960336685,348.39500000000015

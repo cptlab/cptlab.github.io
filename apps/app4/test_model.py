@@ -1,7 +1,9 @@
 # This is just for testing the models locally.
 from model import run_prediction_model
 
-test_smiles = "COc1ccc(C(=O)[O-])cc1"  # A valid SMILES string
+test_smiles = "panadol"
+
+#test_smiles = "COc1ccc(C(=O)[O-])cc1"  # A valid SMILES string
 invalid_smiles = "invalid"  # An invalid SMILES string
 
 # Test with a valid SMILES string

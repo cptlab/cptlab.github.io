@@ -46,7 +46,9 @@
     <!-- Main content -->
     <div class="container">
         <h1>Model 4: Draw a molecule or drug by name</h1>
-        <p>Put a drug or molecule name (e.g. aspirin) in the box, press Predict to return an image of the molecule.</p>
+        <p>Put a drug or molecule name (e.g. aspirin) in the box, press <B>Predict</B> to return an image of the molecule.</p>
+	<p>The tool uses <a href="https://pubchempy.readthedocs.io/en/latest/">PubChemPy</a> to search <a href="https://pubchem.ncbi.nlm.nih.gov">PubChem</a> for the name and retrieves the first associated SMILES structure.</p>
+	<p>It then creates a molecule from the retrieved SMILES using Rdkit and renders it on the result page.</p>
         <p><a href="../tools.html">Back to Model List</a>
         <form method="POST" action="/Model4/predict">
             <label for="name">Enter molecule name:</label><br>

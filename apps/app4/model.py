@@ -9,7 +9,8 @@ def draw_mol_from_name(name):
         if compound:
             smiles = compound[0].canonical_smiles
             mol = Chem.MolFromSmiles(smiles)
-            mol_img = Draw.MolToImage(mol, size=(300, 300), legend=name)  # Create an image
+            legend_text = f"User query: {name}"
+            mol_img = Draw.MolToImage(mol, size=(300, 300), legend=legend_text)  # Create an image
 
             # No need to convert to PIL image; it already is one
             return mol_img

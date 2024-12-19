@@ -20,6 +20,7 @@ They can be linked to via <p><a href="/Model1">Model 1</a></p> made on the fly f
 
 All html files in /templates determine the look of the page for individual tools.
 
+The conda environment for running the apps is set in /etc/systemd/system/flask_app[X].service
 
 
        __ ___         
