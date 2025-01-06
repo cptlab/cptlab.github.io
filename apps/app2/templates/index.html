@@ -47,6 +47,11 @@
     <div class="container">
         <h1>Model 2 SMILES Input Form</h1>
         <p>Put a SMILES string in the box and press Predict to run an example Pytorch NN predicting Ames mutagenicity.</p>
+        <p>This is a sandbox model that uses 2048 bit Morgan fingerprints.</p>
+        <p>It is a trained MLP with 128 nodes in the hidden layer and a single output node.</p>
+        <p>It was trained on the Xu[1] dataset of over 7000 molecules with Ames test results.
+        <p>[1]Xu, C.; Cheng, F.; Chen, L.; Du, Z.; Li, W.; Liu, G.; Lee, P. W.; Tang, Y. In silico prediction of chemical Ames mutagenicity. Journal of chemical information and modeling 2012, 52 (11), 2840-2847.</p>
+
         <p><a href="../tools.html">Back to Model List</a>
         <form method="POST" action="/Model2/predict">
             <label for="smiles">Enter a SMILES string:</label><br>

@@ -1,0 +1,122 @@
+[2025-01-06 17:34:04 +1100] [2494066] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 17:34:04 +1100] [2494066] [INFO] Listening at: http://0.0.0.0:5004 (2494066)
+[2025-01-06 17:34:04 +1100] [2494066] [INFO] Using worker: sync
+[2025-01-06 17:34:04 +1100] [2494068] [INFO] Booting worker with pid: 2494068
+[2025-01-06 17:34:04 +1100] [2494069] [INFO] Booting worker with pid: 2494069
+[2025-01-06 17:34:05 +1100] [2494070] [INFO] Booting worker with pid: 2494070
+[2025-01-06 17:34:05 +1100] [2494068] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+    ~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/srv/apps/dvds/wsgi.py", line 1, in <module>
+    from dvd_catalog_web.py import app
+ModuleNotFoundError: No module named 'dvd_catalog_web.py'; 'dvd_catalog_web' is not a package
+[2025-01-06 17:34:05 +1100] [2494068] [INFO] Worker exiting (pid: 2494068)
+[2025-01-06 17:34:05 +1100] [2494069] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+    ~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/srv/apps/dvds/wsgi.py", line 1, in <module>
+    from dvd_catalog_web.py import app
+ModuleNotFoundError: No module named 'dvd_catalog_web.py'; 'dvd_catalog_web' is not a package
+[2025-01-06 17:34:05 +1100] [2494069] [INFO] Worker exiting (pid: 2494069)
+[2025-01-06 17:34:05 +1100] [2494070] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+    ~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/srv/apps/dvds/wsgi.py", line 1, in <module>
+    from dvd_catalog_web.py import app
+ModuleNotFoundError: No module named 'dvd_catalog_web.py'; 'dvd_catalog_web' is not a package
+[2025-01-06 17:34:05 +1100] [2494070] [INFO] Worker exiting (pid: 2494070)
+[2025-01-06 17:34:05 +1100] [2494066] [ERROR] Worker (pid:2494068) exited with code 3
+[2025-01-06 17:34:05 +1100] [2494066] [ERROR] Worker (pid:2494070) was sent SIGTERM!
+[2025-01-06 17:34:05 +1100] [2494066] [ERROR] Worker (pid:2494069) was sent SIGTERM!
+[2025-01-06 17:34:05 +1100] [2494066] [ERROR] Shutting down: Master
+[2025-01-06 17:34:05 +1100] [2494066] [ERROR] Reason: Worker failed to boot.
+[2025-01-06 17:36:10 +1100] [2494423] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 17:36:10 +1100] [2494423] [INFO] Listening at: http://0.0.0.0:5004 (2494423)
+[2025-01-06 17:36:10 +1100] [2494423] [INFO] Using worker: sync
+[2025-01-06 17:36:10 +1100] [2494424] [INFO] Booting worker with pid: 2494424
+[2025-01-06 17:36:10 +1100] [2494425] [INFO] Booting worker with pid: 2494425
+[2025-01-06 17:36:10 +1100] [2494426] [INFO] Booting worker with pid: 2494426

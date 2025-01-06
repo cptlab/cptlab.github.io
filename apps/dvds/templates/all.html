@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>DVD Catalog</title>
+</head>
+<body>
+    <h1>DVD Catalog</h1>
+    <a href="/dvds{{ url_for('add_dvd') }}">Add a new DVD</a> | 
+    <a href="/dvds{{ url_for('search') }}">Search DVDs</a>
+    <hr>
+    {% if dvds %}
+        <ul>
+        {% for dvd in dvds %}
+            <li>{{ dvd['title'] }} ({{ dvd['year'] }}) - {{ dvd['genre'] }} - Directed by {{ dvd['director'] }} - Rating: {{ dvd['rating'] }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No DVDs found.</p>
+    {% endif %}
+</body>
+</html>
+

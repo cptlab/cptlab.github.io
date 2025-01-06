@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Search Results</h1>
+    
+    {% if dvds %}
+        <table border="1">
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Rating</th>
+            </tr>
+            {% for dvd in dvds %}
+                <tr>
+                    <td>{{ dvd.title }}</td>
+                    <td>{{ dvd.genre }}</td>
+                    <td>{{ dvd.year }}</td>
+                    <td>{{ dvd.director }}</td>
+                    <td>{{ dvd.rating }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No DVDs found matching your search.</p>
+    {% endif %}
+    
+    <p><a href="/dvds{{ url_for('index') }}">Back to Menu</a></p>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Search DVDs</title>
+</head>
+<body>
+    <h1>Search DVDs</h1>
+    <form method="post">
+        Title: <input type="text" name="title" required>
+        <input type="submit" value="Search">
+    </form>
+    <a href="/dvds{{ url_for('index') }}">Back to catalog</a>
+</body>
+</html>
+

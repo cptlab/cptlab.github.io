@@ -1,0 +1,52 @@
+from flask import Flask, render_template, request, redirect, url_for
+from model import run_prediction_model
+from markupsafe import Markup
+
+# AD stuff
+import pickle
+from numpy.linalg import inv
+from scipy.spatial.distance import mahalanobis
+
+app = Flask(__name__)
+
+# Load the model data (centroid and covariance matrix)
+with open('model_data_v1.pkl', 'rb') as f:
+    model_data = pickle.load(f)
+centroid = model_data['centroid']
+cov_matrix = model_data['cov_matrix']
+inv_cov_matrix = inv(cov_matrix)
+
+# Define your threshold for AD, it could be based on your domain or model specifics
+threshold = 95  # for example, if you are using a 95th percentile threshold
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    smiles = request.form['smiles']
+    
+    # Run the prediction model to get the result
+    prediction = run_prediction_model(smiles)
+    prediction_value = round(prediction * 100, 3)
+
+    # Compute the Mahalanobis distance for applicability domain check
+    distance = compute_mahalanobis_distance_from_df(smiles, centroid, inv_cov_matrix)
+    if distance is None:
+        ad_status = "Invalid SMILES"
+    else:
+        ad_status = "Within AD" if distance <= threshold else "Outside AD"
+    
+    # Format the result based on prediction and AD status
+    result_text = "Mutagen" if prediction > 0.5 else "Non-mutagen"
+    result = f"<b>{result_text} ({prediction_value}%)</b><br>{ad_status} (Mahalanobis Distance: {round(distance, 2)})"
+    
+    # Safe result for HTML rendering
+    result_safe = Markup(result)
+    
+    return render_template('result.html', prediction=result_safe)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5001)
+
