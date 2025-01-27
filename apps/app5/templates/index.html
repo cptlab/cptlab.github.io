@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Substructures</title>
+    <link rel="icon" type="image/png" href="/Model2/static/cptlab_icon.png?">
+    <style>
+        /* CSS styles to position the logo */
+        body {
+            padding-top: 100px; /* Adjust padding to create space for the logo */
+            font-family: Arial, sans-serif; /* Example: Set font family */
+        }
+
+        #logo {
+            width: 200px;
+            position: fixed;
+            top: 10px; /* Adjust top position to leave space */
+            left: 10px; /* Adjust left position to leave space */
+            z-index: 1000; /* Ensure logo stays above other content */
+        }
+
+        /* Additional styles for content */
+        .container {
+            margin-top: 20px; /* Adjust margin to create space below the logo */
+            padding: 20px; /* Example: Add padding to content */
+            background-color: #f0f0f0; /* Example: Background color for content */
+            border: 1px solid #ccc; /* Example: Border for content */
+            border-radius: 5px; /* Example: Rounded corners */
+        }
+
+        h1 {
+            color: #333; /* Example: Text color */
+        }
+
+        p {
+            color: #666; /* Example: Text color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo -->
+    <a href="https://cptlab.au/">
+        <img id="logo" src="/AmesSubStrucs/static/logo.jpg" alt="Logo">
+    </a>
+
+    <!-- Main content -->
+    <div class="container">
+
+
+    <h1>Enter a SMILES string to check for substructure matches:</h1>
+    <p>The substructures contained in the database are from the following sources. More will be listed here as they are added.</p>
+    <p>"Benigni R., C. Bossa, N. Jeliazkova, T. Netzeva, and A. Worth. (2008) The Benigni / Bossa rulebase for mutagenicity and carcinogenicity - a module of Toxtree. European Commission report EUR 23241"</p>
+
+    <form action="/AmesSubStrucs/results" method="POST">
+        <label for="smiles">SMILES:</label>
+        <input type="text" id="smiles" name="smiles" required>
+        <button type="submit">Check Alerts</button>
+    </form>
+    </div>
+</body>
+</html>
+

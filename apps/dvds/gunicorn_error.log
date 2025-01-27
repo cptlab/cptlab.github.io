@@ -120,3 +120,138 @@ ModuleNotFoundError: No module named 'dvd_catalog_web.py'; 'dvd_catalog_web' is 
 [2025-01-06 17:36:10 +1100] [2494424] [INFO] Booting worker with pid: 2494424
 [2025-01-06 17:36:10 +1100] [2494425] [INFO] Booting worker with pid: 2494425
 [2025-01-06 17:36:10 +1100] [2494426] [INFO] Booting worker with pid: 2494426
+[2025-01-06 18:07:01 +1100] [2494423] [INFO] Handling signal: term
+[2025-01-06 18:07:01 +1100] [2494424] [INFO] Worker exiting (pid: 2494424)
+[2025-01-06 18:07:01 +1100] [2494425] [INFO] Worker exiting (pid: 2494425)
+[2025-01-06 18:07:01 +1100] [2494426] [INFO] Worker exiting (pid: 2494426)
+[2025-01-06 18:07:01 +1100] [2494423] [ERROR] Worker (pid:2494424) was sent SIGTERM!
+[2025-01-06 18:07:01 +1100] [2494423] [ERROR] Worker (pid:2494426) was sent SIGTERM!
+[2025-01-06 18:07:01 +1100] [2494423] [ERROR] Worker (pid:2494425) was sent SIGTERM!
+[2025-01-06 18:07:02 +1100] [2494423] [INFO] Shutting down: Master
+[2025-01-06 18:07:02 +1100] [2499781] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 18:07:02 +1100] [2499781] [INFO] Listening at: http://0.0.0.0:5004 (2499781)
+[2025-01-06 18:07:02 +1100] [2499781] [INFO] Using worker: sync
+[2025-01-06 18:07:02 +1100] [2499787] [INFO] Booting worker with pid: 2499787
+[2025-01-06 18:07:02 +1100] [2499788] [INFO] Booting worker with pid: 2499788
+[2025-01-06 18:07:02 +1100] [2499789] [INFO] Booting worker with pid: 2499789
+[2025-01-06 18:13:04 +1100] [2499781] [INFO] Handling signal: term
+[2025-01-06 18:13:04 +1100] [2499787] [INFO] Worker exiting (pid: 2499787)
+[2025-01-06 18:13:04 +1100] [2499789] [INFO] Worker exiting (pid: 2499789)
+[2025-01-06 18:13:04 +1100] [2499788] [INFO] Worker exiting (pid: 2499788)
+[2025-01-06 18:13:04 +1100] [2499781] [INFO] Shutting down: Master
+[2025-01-06 18:13:04 +1100] [2500731] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 18:13:04 +1100] [2500731] [INFO] Listening at: http://0.0.0.0:5004 (2500731)
+[2025-01-06 18:13:04 +1100] [2500731] [INFO] Using worker: sync
+[2025-01-06 18:13:04 +1100] [2500732] [INFO] Booting worker with pid: 2500732
+[2025-01-06 18:13:04 +1100] [2500733] [INFO] Booting worker with pid: 2500733
+[2025-01-06 18:13:04 +1100] [2500734] [INFO] Booting worker with pid: 2500734
+[2025-01-06 18:13:49,442] ERROR in app: Exception on /add [POST]
+Traceback (most recent call last):
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/srv/apps/dvds/dvd_catalog_web.py", line 41, in add_dvd
+    return redirect(url_for('/dvds/add'))
+                    ~~~~~~~^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ~~~~~~~~~~~~~~~~~~~^
+        endpoint,
+        ^^^^^^^^^
+    ...<4 lines>...
+        **values,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/add'. Did you mean 'add_dvd' instead?
+[2025-01-06 18:18:12 +1100] [2500731] [INFO] Handling signal: term
+[2025-01-06 18:18:12 +1100] [2500732] [INFO] Worker exiting (pid: 2500732)
+[2025-01-06 18:18:12 +1100] [2500733] [INFO] Worker exiting (pid: 2500733)
+[2025-01-06 18:18:12 +1100] [2500734] [INFO] Worker exiting (pid: 2500734)
+[2025-01-06 18:18:12 +1100] [2500731] [INFO] Shutting down: Master
+[2025-01-06 18:18:12 +1100] [2502335] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 18:18:12 +1100] [2502335] [INFO] Listening at: http://0.0.0.0:5004 (2502335)
+[2025-01-06 18:18:12 +1100] [2502335] [INFO] Using worker: sync
+[2025-01-06 18:18:12 +1100] [2502338] [INFO] Booting worker with pid: 2502338
+[2025-01-06 18:18:12 +1100] [2502339] [INFO] Booting worker with pid: 2502339
+[2025-01-06 18:18:12 +1100] [2502340] [INFO] Booting worker with pid: 2502340
+[2025-01-06 18:19:36,031] ERROR in app: Exception on /add [POST]
+Traceback (most recent call last):
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/srv/apps/dvds/dvd_catalog_web.py", line 41, in add_dvd
+    return redirect(url_for('/dvds/all'))
+                    ~~~~~~~^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ~~~~~~~~~~~~~~~~~~~^
+        endpoint,
+        ^^^^^^^^^
+    ...<4 lines>...
+        **values,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/smatthews_a/miniconda3/envs/mod_dep/lib/python3.13/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/all'. Did you mean 'add_dvd' instead?
+[2025-01-06 18:22:05 +1100] [2502335] [INFO] Handling signal: term
+[2025-01-06 18:22:05 +1100] [2502338] [INFO] Worker exiting (pid: 2502338)
+[2025-01-06 18:22:05 +1100] [2502340] [INFO] Worker exiting (pid: 2502340)
+[2025-01-06 18:22:05 +1100] [2502339] [INFO] Worker exiting (pid: 2502339)
+[2025-01-06 18:22:05 +1100] [2502335] [ERROR] Worker (pid:2502340) was sent SIGTERM!
+[2025-01-06 18:22:05 +1100] [2502335] [ERROR] Worker (pid:2502339) was sent SIGTERM!
+[2025-01-06 18:22:05 +1100] [2502335] [ERROR] Worker (pid:2502338) was sent SIGTERM!
+[2025-01-06 18:22:05 +1100] [2502335] [INFO] Shutting down: Master
+[2025-01-06 18:22:05 +1100] [2503105] [INFO] Starting gunicorn 23.0.0
+[2025-01-06 18:22:05 +1100] [2503105] [INFO] Listening at: http://0.0.0.0:5004 (2503105)
+[2025-01-06 18:22:05 +1100] [2503105] [INFO] Using worker: sync
+[2025-01-06 18:22:05 +1100] [2503106] [INFO] Booting worker with pid: 2503106
+[2025-01-06 18:22:05 +1100] [2503107] [INFO] Booting worker with pid: 2503107
+[2025-01-06 18:22:05 +1100] [2503108] [INFO] Booting worker with pid: 2503108
+[2025-01-16 21:20:38 +1100] [2503107] [INFO] Worker exiting (pid: 2503107)
+[2025-01-16 21:20:38 +1100] [2503106] [INFO] Worker exiting (pid: 2503106)
+[2025-01-16 21:20:38 +1100] [2503105] [INFO] Handling signal: term
+[2025-01-16 21:20:39 +1100] [2503108] [INFO] Worker exiting (pid: 2503108)
+[2025-01-16 21:20:41 +1100] [2503105] [ERROR] Worker (pid:2503106) was sent SIGTERM!
+[2025-01-16 21:20:41 +1100] [2503105] [ERROR] Worker (pid:2503107) was sent SIGTERM!
+[2025-01-16 21:20:55 +1100] [2503105] [INFO] Shutting down: Master
+[2025-01-16 21:21:40 +1100] [1191] [INFO] Starting gunicorn 23.0.0
+[2025-01-16 21:21:40 +1100] [1191] [INFO] Listening at: http://0.0.0.0:5004 (1191)
+[2025-01-16 21:21:40 +1100] [1191] [INFO] Using worker: sync
+[2025-01-16 21:21:40 +1100] [1633] [INFO] Booting worker with pid: 1633
+[2025-01-16 21:21:40 +1100] [1641] [INFO] Booting worker with pid: 1641
+[2025-01-16 21:21:40 +1100] [1653] [INFO] Booting worker with pid: 1653

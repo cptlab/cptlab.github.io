@@ -31,6 +31,9 @@ The location and PORT (5000 etc) of the deployment is determined in:
 
 /etc/nginx/conf.d/cptlab-web.conf (must match port specified in flask_app[X].py).
 
+Here is where /ModelX is linked to the port where the app is running.
+e.g. website/Model1 --> flask app running on port 5000
+
 Remember to sudo systemctl restart nginx
 
 

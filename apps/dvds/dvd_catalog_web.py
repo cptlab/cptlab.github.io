@@ -38,7 +38,7 @@ def add_dvd():
         conn.commit()
         conn.close()
 
-        return redirect(url_for('index'))
+        return redirect('/dvds/all')
 
     return render_template('add_dvd.html')
 

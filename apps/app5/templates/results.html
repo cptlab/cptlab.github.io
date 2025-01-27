@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="icon" type="image/png" href="/AmesSubStrucs/static/cptlab_icon.png?">
+    <style>
+        /* CSS styles to position the logo */
+        body {
+            padding-top: 100px; /* Adjust padding to create space for the logo */
+            font-family: Arial, sans-serif; /* Example: Set font family */
+        }
+
+        #logo {
+            width: 200px;
+            position: fixed;
+            top: 10px; /* Adjust top position to leave space */
+            left: 10px; /* Adjust left position to leave space */
+            z-index: 1000; /* Ensure logo stays above other content */
+        }
+
+        /* Additional styles for content */
+        .container {
+            margin-top: 20px; /* Adjust margin to create space below the logo */
+            padding: 20px; /* Example: Add padding to content */
+            background-color: #f0f0f0; /* Example: Background color for content */
+            border: 1px solid #ccc; /* Example: Border for content */
+            border-radius: 5px; /* Example: Rounded corners */
+        }
+
+        h1 {
+            color: #333; /* Example: Text color */
+        }
+
+        p {
+            color: #666; /* Example: Text color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo -->
+    <a href="https://cptlab.au/">
+        <img id="logo" src="/AmesSubStrucs/static/logo.jpg" alt="Logo">
+    </a>
+    <!-- Main content -->
+    <div class="container">
+
+    <h1>Substructure Match Results for: {{ smiles }}</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if alerts %}
+        <h2>Matched Alerts:</h2>
+        <ul>
+            {% for alert in alerts %}
+                <li>{{ alert }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No substructure matches found.</p>
+    {% endif %}
+
+    <br>
+    <p><a href="/AmesSubStrucs">Enter another SMILES</a></p>
+
+    <p><a href="/tools.html">Back to Model List</a></p>
+    </div>
+</body>
+</html>
+
