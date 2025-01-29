@@ -45,7 +45,7 @@ In order to make these deployments persistent (auto restart on boot) we have to 
 
 Here is a list of tasks for making the deployment persistent:
 
-0. Make a wsgi file in /apps/app[X] that calls the flask_app[X].py file.
+0. Make a wsgi file in /apps/app[X] that calls the flask_app[X].py file (this is called in the .service file).
 1. Edit cptlab-web.conf file as above
 2. Create file in /etc/systemd/system such as /etc/systemd/system/flask_app1.service
 3. Enable the new service sudo systemctl enable flask_app1.service
@@ -65,6 +65,7 @@ git pull origin main
 If there are changes on both sides they have to be resolved.
 
 Github authentication is via personal access token, it must be renewed every so often.
+cd /srv and do git remote -v to see the personal access tokens.
 
 All apps are run from their apps directory and are linked to via tools.html
 
