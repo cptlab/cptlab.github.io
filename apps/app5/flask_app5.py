@@ -45,6 +45,24 @@ def results():
 
     return render_template('results.html', smiles=smiles, error=error, alerts=alerts)
 
+
+# Route to list all stored SMARTS patterns
+@app.route('/list_patterns', methods=['GET'])
+def list_patterns():
+    conn = get_db_connection()
+    #patterns = conn.execute('SELECT name, smarts, source FROM patterns').fetchall()
+    #conn.close()
+
+    patterns = conn.execute('''
+        SELECT patterns.name, patterns.smarts, sources.source
+        FROM patterns
+        JOIN sources ON patterns.source_id = sources.id
+    ''').fetchall()
+    conn.close()
+
+    return render_template('list_patterns.html', patterns=patterns)
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5005)
 

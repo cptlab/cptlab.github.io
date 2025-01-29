@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Substructures</title>
-    <link rel="icon" type="image/png" href="/Model2/static/cptlab_icon.png?">
+    <title>List All Substructures in Database</title>
+    <link rel="icon" type="image/png" href="/AmesSubStrucs/static/cptlab_icon.png?">
     <style>
         /* CSS styles to position the logo */
         body {
@@ -49,26 +49,25 @@
     <div class="container">
 
 
-    <h1>Enter a SMILES string to check for the presence of mutagenic substructure matches:</h1>
-    <p>Substructures can be added using the CLI via server login. (staff only)</p>
-    <p>The substructures contained in the database are from the following sources.</P>
-    <p> More will be listed here as they are added.</p>
-    <p><i>Benigni R., C. Bossa, N. Jeliazkova, T. Netzeva, and A. Worth. (2008) The Benigni / Bossa rulebase for mutagenicity and carcinogenicity - a module of Toxtree. European Commission report EUR 23241</i> <b>Non mutagenic carcinogens not included.</b></p>
-
-    <form action="/AmesSubStrucs/results" method="POST">
-        <label for="smiles">SMILES:</label>
-        <input type="text" id="smiles" name="smiles" required>
-        <button type="submit">Check Alerts</button>
-    </form>
-    <p>
-    <form action="/AmesSubStrucs/list_patterns" method="get">
-        <button type="submit">View All SMARTS Patterns</button>
-    </form>
-    </p>
-
-
-    </form>
+    <h2>SMARTS Patterns List</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>SMARTS</th>
+            <th>Source</th>
+        </tr>
+        {% for pattern in patterns %}
+        <tr>
+            <td>{{ pattern.name }}</td>
+            <td>{{ pattern.smarts }}</td>
+            <td>{{ pattern.source }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
     </div>
+
+    <a href="/AmesSubStrucs">Back to Substructure Search</a>
 </body>
 </html>
 
