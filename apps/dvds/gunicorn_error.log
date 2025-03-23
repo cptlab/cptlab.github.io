@@ -255,3 +255,36 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/
 [2025-01-16 21:21:40 +1100] [1633] [INFO] Booting worker with pid: 1633
 [2025-01-16 21:21:40 +1100] [1641] [INFO] Booting worker with pid: 1641
 [2025-01-16 21:21:40 +1100] [1653] [INFO] Booting worker with pid: 1653
+[2025-02-13 20:22:48 +1100] [1191] [INFO] Handling signal: term
+[2025-02-13 20:22:48 +1100] [1653] [INFO] Worker exiting (pid: 1653)
+[2025-02-13 20:22:48 +1100] [1633] [INFO] Worker exiting (pid: 1633)
+[2025-02-13 20:22:48 +1100] [1641] [INFO] Worker exiting (pid: 1641)
+[2025-02-13 20:23:12 +1100] [1191] [INFO] Shutting down: Master
+[2025-02-13 20:23:50 +1100] [1203] [INFO] Starting gunicorn 23.0.0
+[2025-02-13 20:23:50 +1100] [1203] [INFO] Listening at: http://0.0.0.0:5004 (1203)
+[2025-02-13 20:23:50 +1100] [1203] [INFO] Using worker: sync
+[2025-02-13 20:23:50 +1100] [1651] [INFO] Booting worker with pid: 1651
+[2025-02-13 20:23:50 +1100] [1685] [INFO] Booting worker with pid: 1685
+[2025-02-13 20:23:50 +1100] [1696] [INFO] Booting worker with pid: 1696
+[2025-02-22 08:58:10 +1100] [1203] [INFO] Handling signal: term
+[2025-02-22 08:58:10 +1100] [1651] [INFO] Worker exiting (pid: 1651)
+[2025-02-22 08:58:10 +1100] [1685] [INFO] Worker exiting (pid: 1685)
+[2025-02-22 08:58:10 +1100] [1696] [INFO] Worker exiting (pid: 1696)
+[2025-02-22 08:58:29 +1100] [1203] [INFO] Shutting down: Master
+[2025-02-22 08:59:12 +1100] [1200] [INFO] Starting gunicorn 23.0.0
+[2025-02-22 08:59:12 +1100] [1200] [INFO] Listening at: http://0.0.0.0:5004 (1200)
+[2025-02-22 08:59:12 +1100] [1200] [INFO] Using worker: sync
+[2025-02-22 08:59:12 +1100] [1662] [INFO] Booting worker with pid: 1662
+[2025-02-22 08:59:12 +1100] [1670] [INFO] Booting worker with pid: 1670
+[2025-02-22 08:59:12 +1100] [1693] [INFO] Booting worker with pid: 1693
+[2025-03-13 20:26:55 +1100] [1200] [INFO] Handling signal: term
+[2025-03-13 20:26:55 +1100] [1662] [INFO] Worker exiting (pid: 1662)
+[2025-03-13 20:26:55 +1100] [1693] [INFO] Worker exiting (pid: 1693)
+[2025-03-13 20:26:55 +1100] [1670] [INFO] Worker exiting (pid: 1670)
+[2025-03-13 20:27:18 +1100] [1200] [INFO] Shutting down: Master
+[2025-03-13 20:27:57 +1100] [1186] [INFO] Starting gunicorn 23.0.0
+[2025-03-13 20:27:57 +1100] [1186] [INFO] Listening at: http://0.0.0.0:5004 (1186)
+[2025-03-13 20:27:57 +1100] [1186] [INFO] Using worker: sync
+[2025-03-13 20:27:57 +1100] [1710] [INFO] Booting worker with pid: 1710
+[2025-03-13 20:27:57 +1100] [1737] [INFO] Booting worker with pid: 1737
+[2025-03-13 20:27:57 +1100] [1728] [INFO] Booting worker with pid: 1728
