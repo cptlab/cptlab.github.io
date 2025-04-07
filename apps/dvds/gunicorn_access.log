@@ -60,3 +60,5 @@
 127.0.0.1 - - [27/Jan/2025:11:00:56 +1100] "GET / HTTP/1.0" 200 332 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
 127.0.0.1 - - [28/Feb/2025:17:16:14 +1100] "GET / HTTP/1.0" 200 332 "https://dev-toxi.sydney.edu.au/dvds/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
 127.0.0.1 - - [15/Mar/2025:11:27:34 +1100] "GET / HTTP/1.0" 200 332 "https://dev-toxi.sydney.edu.au/dvds/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+127.0.0.1 - - [28/Mar/2025:18:30:59 +1100] "GET / HTTP/1.0" 200 332 "https://dev-toxi.sydney.edu.au/dvds/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+127.0.0.1 - - [29/Mar/2025:04:35:32 +1100] "GET / HTTP/1.0" 200 332 "https://dev-toxi.sydney.edu.au/dvds/search" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
