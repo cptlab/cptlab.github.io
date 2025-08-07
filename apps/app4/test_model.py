@@ -1,5 +1,5 @@
 # This is just for testing the models locally.
-from model import run_prediction_model
+from model2 import run_prediction_model
 
 test_smiles = "panadol"
 
