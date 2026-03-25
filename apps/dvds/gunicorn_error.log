@@ -343,3 +343,122 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/
 [2025-07-26 10:46:27 +1000] [1766] [INFO] Booting worker with pid: 1766
 [2025-07-26 10:46:28 +1000] [1782] [INFO] Booting worker with pid: 1782
 [2025-07-26 10:46:28 +1000] [1778] [INFO] Booting worker with pid: 1778
+[2025-08-14 16:37:54 +1000] [1210] [INFO] Starting gunicorn 23.0.0
+[2025-08-14 16:37:54 +1000] [1210] [INFO] Listening at: http://0.0.0.0:5004 (1210)
+[2025-08-14 16:37:54 +1000] [1210] [INFO] Using worker: sync
+[2025-08-14 16:37:54 +1000] [1767] [INFO] Booting worker with pid: 1767
+[2025-08-14 16:37:54 +1000] [1779] [INFO] Booting worker with pid: 1779
+[2025-08-14 16:37:54 +1000] [1798] [INFO] Booting worker with pid: 1798
+[2025-08-14 20:41:29 +1000] [1798] [INFO] Worker exiting (pid: 1798)
+[2025-08-14 20:41:29 +1000] [1767] [INFO] Worker exiting (pid: 1767)
+[2025-08-14 20:41:29 +1000] [1779] [INFO] Worker exiting (pid: 1779)
+[2025-08-14 20:41:30 +1000] [1210] [INFO] Handling signal: term
+[2025-08-14 20:41:31 +1000] [1210] [ERROR] Worker (pid:1798) was sent SIGTERM!
+[2025-08-14 20:41:38 +1000] [1210] [INFO] Shutting down: Master
+[2025-08-14 20:42:22 +1000] [1203] [INFO] Starting gunicorn 23.0.0
+[2025-08-14 20:42:22 +1000] [1203] [INFO] Listening at: http://0.0.0.0:5004 (1203)
+[2025-08-14 20:42:22 +1000] [1203] [INFO] Using worker: sync
+[2025-08-14 20:42:22 +1000] [1732] [INFO] Booting worker with pid: 1732
+[2025-08-14 20:42:22 +1000] [1742] [INFO] Booting worker with pid: 1742
+[2025-08-14 20:42:23 +1000] [1767] [INFO] Booting worker with pid: 1767
+[2025-09-18 19:31:53 +1000] [1203] [INFO] Handling signal: term
+[2025-09-18 19:31:53 +1000] [1732] [INFO] Worker exiting (pid: 1732)
+[2025-09-18 19:31:53 +1000] [1767] [INFO] Worker exiting (pid: 1767)
+[2025-09-18 19:31:53 +1000] [1742] [INFO] Worker exiting (pid: 1742)
+[2025-09-18 19:32:11 +1000] [1203] [INFO] Shutting down: Master
+[2025-09-18 19:32:51 +1000] [1215] [INFO] Starting gunicorn 23.0.0
+[2025-09-18 19:32:52 +1000] [1215] [INFO] Listening at: http://0.0.0.0:5004 (1215)
+[2025-09-18 19:32:52 +1000] [1215] [INFO] Using worker: sync
+[2025-09-18 19:32:52 +1000] [1694] [INFO] Booting worker with pid: 1694
+[2025-09-18 19:32:52 +1000] [1701] [INFO] Booting worker with pid: 1701
+[2025-09-18 19:32:52 +1000] [1720] [INFO] Booting worker with pid: 1720
+[2025-09-18 23:06:37 +1000] [1720] [INFO] Worker exiting (pid: 1720)
+[2025-09-18 23:06:37 +1000] [1701] [INFO] Worker exiting (pid: 1701)
+[2025-09-18 23:06:38 +1000] [1215] [INFO] Handling signal: term
+[2025-09-18 23:06:38 +1000] [1215] [ERROR] Worker (pid:1720) was sent SIGTERM!
+[2025-09-18 23:06:38 +1000] [1694] [INFO] Worker exiting (pid: 1694)
+[2025-09-18 23:06:43 +1000] [1215] [INFO] Shutting down: Master
+[2025-09-18 23:08:16 +1000] [1198] [INFO] Starting gunicorn 23.0.0
+[2025-09-18 23:08:16 +1000] [1198] [INFO] Listening at: http://0.0.0.0:5004 (1198)
+[2025-09-18 23:08:16 +1000] [1198] [INFO] Using worker: sync
+[2025-09-18 23:08:16 +1000] [1599] [INFO] Booting worker with pid: 1599
+[2025-09-18 23:08:16 +1000] [1630] [INFO] Booting worker with pid: 1630
+[2025-09-18 23:08:16 +1000] [1643] [INFO] Booting worker with pid: 1643
+[2025-10-16 19:35:07 +1100] [1198] [INFO] Handling signal: term
+[2025-10-16 19:35:07 +1100] [1599] [INFO] Worker exiting (pid: 1599)
+[2025-10-16 19:35:07 +1100] [1643] [INFO] Worker exiting (pid: 1643)
+[2025-10-16 19:35:07 +1100] [1630] [INFO] Worker exiting (pid: 1630)
+[2025-10-16 19:35:33 +1100] [1198] [INFO] Shutting down: Master
+[2025-10-16 19:36:10 +1100] [1206] [INFO] Starting gunicorn 23.0.0
+[2025-10-16 19:36:10 +1100] [1206] [INFO] Listening at: http://0.0.0.0:5004 (1206)
+[2025-10-16 19:36:10 +1100] [1206] [INFO] Using worker: sync
+[2025-10-16 19:36:10 +1100] [1721] [INFO] Booting worker with pid: 1721
+[2025-10-16 19:36:10 +1100] [1724] [INFO] Booting worker with pid: 1724
+[2025-10-16 19:36:10 +1100] [1732] [INFO] Booting worker with pid: 1732
+[2025-11-22 11:26:03 +1100] [1206] [INFO] Handling signal: term
+[2025-11-22 11:26:04 +1100] [1724] [INFO] Worker exiting (pid: 1724)
+[2025-11-22 11:26:04 +1100] [1721] [INFO] Worker exiting (pid: 1721)
+[2025-11-22 11:26:04 +1100] [1732] [INFO] Worker exiting (pid: 1732)
+[2025-11-22 11:26:28 +1100] [1206] [INFO] Shutting down: Master
+[2025-11-22 11:27:05 +1100] [1220] [INFO] Starting gunicorn 23.0.0
+[2025-11-22 11:27:05 +1100] [1220] [INFO] Listening at: http://0.0.0.0:5004 (1220)
+[2025-11-22 11:27:05 +1100] [1220] [INFO] Using worker: sync
+[2025-11-22 11:27:05 +1100] [1679] [INFO] Booting worker with pid: 1679
+[2025-11-22 11:27:05 +1100] [1694] [INFO] Booting worker with pid: 1694
+[2025-11-22 11:27:05 +1100] [1706] [INFO] Booting worker with pid: 1706
+[2025-12-18 20:40:47 +1100] [1220] [INFO] Handling signal: term
+[2025-12-18 20:40:46 +1100] [1694] [INFO] Worker exiting (pid: 1694)
+[2025-12-18 20:40:46 +1100] [1679] [INFO] Worker exiting (pid: 1679)
+[2025-12-18 20:40:46 +1100] [1706] [INFO] Worker exiting (pid: 1706)
+[2025-12-18 20:41:08 +1100] [1220] [INFO] Shutting down: Master
+[2025-12-18 20:41:48 +1100] [1243] [INFO] Starting gunicorn 23.0.0
+[2025-12-18 20:41:48 +1100] [1243] [INFO] Listening at: http://0.0.0.0:5004 (1243)
+[2025-12-18 20:41:48 +1100] [1243] [INFO] Using worker: sync
+[2025-12-18 20:41:49 +1100] [1618] [INFO] Booting worker with pid: 1618
+[2025-12-18 20:41:49 +1100] [1633] [INFO] Booting worker with pid: 1633
+[2025-12-18 20:41:49 +1100] [1658] [INFO] Booting worker with pid: 1658
+[2025-12-19 19:00:35 +1100] [1658] [INFO] Worker exiting (pid: 1658)
+[2025-12-19 19:00:34 +1100] [1618] [INFO] Worker exiting (pid: 1618)
+[2025-12-19 19:00:35 +1100] [1243] [INFO] Handling signal: term
+[2025-12-19 19:00:35 +1100] [1633] [INFO] Worker exiting (pid: 1633)
+[2025-12-19 19:00:38 +1100] [1243] [ERROR] Worker (pid:1658) was sent SIGTERM!
+[2025-12-19 19:00:47 +1100] [1243] [INFO] Shutting down: Master
+[2026-01-06 09:15:30 +1100] [1214] [INFO] Starting gunicorn 23.0.0
+[2026-01-06 09:15:30 +1100] [1214] [INFO] Listening at: http://0.0.0.0:5004 (1214)
+[2026-01-06 09:15:30 +1100] [1214] [INFO] Using worker: sync
+[2026-01-06 09:15:30 +1100] [1706] [INFO] Booting worker with pid: 1706
+[2026-01-06 09:15:30 +1100] [1716] [INFO] Booting worker with pid: 1716
+[2026-01-06 09:15:30 +1100] [1725] [INFO] Booting worker with pid: 1725
+[2026-01-15 19:51:20 +1100] [1214] [INFO] Handling signal: term
+[2026-01-15 19:51:19 +1100] [1706] [INFO] Worker exiting (pid: 1706)
+[2026-01-15 19:51:20 +1100] [1725] [INFO] Worker exiting (pid: 1725)
+[2026-01-15 19:51:20 +1100] [1716] [INFO] Worker exiting (pid: 1716)
+[2026-01-15 19:51:46 +1100] [1214] [INFO] Shutting down: Master
+[2026-01-15 19:52:25 +1100] [1243] [INFO] Starting gunicorn 23.0.0
+[2026-01-15 19:52:25 +1100] [1243] [INFO] Listening at: http://0.0.0.0:5004 (1243)
+[2026-01-15 19:52:25 +1100] [1243] [INFO] Using worker: sync
+[2026-01-15 19:52:25 +1100] [1722] [INFO] Booting worker with pid: 1722
+[2026-01-15 19:52:25 +1100] [1738] [INFO] Booting worker with pid: 1738
+[2026-01-15 19:52:25 +1100] [1754] [INFO] Booting worker with pid: 1754
+[2026-02-19 20:00:12 +1100] [1243] [INFO] Handling signal: term
+[2026-02-19 20:00:12 +1100] [1738] [INFO] Worker exiting (pid: 1738)
+[2026-02-19 20:00:12 +1100] [1754] [INFO] Worker exiting (pid: 1754)
+[2026-02-19 20:00:12 +1100] [1722] [INFO] Worker exiting (pid: 1722)
+[2026-02-19 20:00:25 +1100] [1243] [INFO] Shutting down: Master
+[2026-02-19 20:01:15 +1100] [1247] [INFO] Starting gunicorn 23.0.0
+[2026-02-19 20:01:15 +1100] [1247] [INFO] Listening at: http://0.0.0.0:5004 (1247)
+[2026-02-19 20:01:15 +1100] [1247] [INFO] Using worker: sync
+[2026-02-19 20:01:15 +1100] [1712] [INFO] Booting worker with pid: 1712
+[2026-02-19 20:01:15 +1100] [1739] [INFO] Booting worker with pid: 1739
+[2026-02-19 20:01:15 +1100] [1768] [INFO] Booting worker with pid: 1768
+[2026-03-19 19:38:28 +1100] [1247] [INFO] Handling signal: term
+[2026-03-19 19:38:28 +1100] [1712] [INFO] Worker exiting (pid: 1712)
+[2026-03-19 19:38:28 +1100] [1768] [INFO] Worker exiting (pid: 1768)
+[2026-03-19 19:38:28 +1100] [1739] [INFO] Worker exiting (pid: 1739)
+[2026-03-19 19:38:42 +1100] [1247] [INFO] Shutting down: Master
+[2026-03-19 19:40:25 +1100] [1242] [INFO] Starting gunicorn 23.0.0
+[2026-03-19 19:40:25 +1100] [1242] [INFO] Listening at: http://0.0.0.0:5004 (1242)
+[2026-03-19 19:40:25 +1100] [1242] [INFO] Using worker: sync
+[2026-03-19 19:40:25 +1100] [1719] [INFO] Booting worker with pid: 1719
+[2026-03-19 19:40:25 +1100] [1728] [INFO] Booting worker with pid: 1728
+[2026-03-19 19:40:25 +1100] [1744] [INFO] Booting worker with pid: 1744
