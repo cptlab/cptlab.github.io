@@ -462,3 +462,58 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/
 [2026-03-19 19:40:25 +1100] [1719] [INFO] Booting worker with pid: 1719
 [2026-03-19 19:40:25 +1100] [1728] [INFO] Booting worker with pid: 1728
 [2026-03-19 19:40:25 +1100] [1744] [INFO] Booting worker with pid: 1744
+[2026-04-02 19:10:35 +1100] [1242] [INFO] Handling signal: term
+[2026-04-02 19:10:35 +1100] [1744] [INFO] Worker exiting (pid: 1744)
+[2026-04-02 19:10:35 +1100] [1728] [INFO] Worker exiting (pid: 1728)
+[2026-04-02 19:10:35 +1100] [1719] [INFO] Worker exiting (pid: 1719)
+[2026-04-02 19:10:58 +1100] [1242] [INFO] Shutting down: Master
+[2026-04-07 07:02:03 +1000] [1228] [INFO] Starting gunicorn 23.0.0
+[2026-04-07 07:02:03 +1000] [1228] [INFO] Listening at: http://0.0.0.0:5004 (1228)
+[2026-04-07 07:02:03 +1000] [1228] [INFO] Using worker: sync
+[2026-04-07 07:02:03 +1000] [1710] [INFO] Booting worker with pid: 1710
+[2026-04-07 07:02:03 +1000] [1726] [INFO] Booting worker with pid: 1726
+[2026-04-07 07:02:03 +1000] [1730] [INFO] Booting worker with pid: 1730
+[2026-04-25 12:52:33 +1000] [1228] [INFO] Handling signal: term
+[2026-04-25 12:52:33 +1000] [1726] [INFO] Worker exiting (pid: 1726)
+[2026-04-25 12:52:33 +1000] [1730] [INFO] Worker exiting (pid: 1730)
+[2026-04-25 12:52:33 +1000] [1710] [INFO] Worker exiting (pid: 1710)
+[2026-04-25 12:52:54 +1000] [1228] [INFO] Shutting down: Master
+[2026-04-25 12:53:38 +1000] [1247] [INFO] Starting gunicorn 23.0.0
+[2026-04-25 12:53:38 +1000] [1247] [INFO] Listening at: http://0.0.0.0:5004 (1247)
+[2026-04-25 12:53:38 +1000] [1247] [INFO] Using worker: sync
+[2026-04-25 12:53:38 +1000] [1773] [INFO] Booting worker with pid: 1773
+[2026-04-25 12:53:38 +1000] [1788] [INFO] Booting worker with pid: 1788
+[2026-04-25 12:53:39 +1000] [1799] [INFO] Booting worker with pid: 1799
+[2026-05-07 19:53:53 +1000] [1247] [INFO] Handling signal: term
+[2026-05-07 19:53:53 +1000] [1773] [INFO] Worker exiting (pid: 1773)
+[2026-05-07 19:53:54 +1000] [1799] [INFO] Worker exiting (pid: 1799)
+[2026-05-07 19:53:53 +1000] [1788] [INFO] Worker exiting (pid: 1788)
+[2026-05-07 19:54:16 +1000] [1247] [INFO] Shutting down: Master
+[2026-05-07 19:54:57 +1000] [1232] [INFO] Starting gunicorn 23.0.0
+[2026-05-07 19:54:57 +1000] [1232] [INFO] Listening at: http://0.0.0.0:5004 (1232)
+[2026-05-07 19:54:57 +1000] [1232] [INFO] Using worker: sync
+[2026-05-07 19:54:57 +1000] [1685] [INFO] Booting worker with pid: 1685
+[2026-05-07 19:54:57 +1000] [1691] [INFO] Booting worker with pid: 1691
+[2026-05-07 19:54:57 +1000] [1699] [INFO] Booting worker with pid: 1699
+[2026-05-14 19:31:51 +1000] [1232] [INFO] Handling signal: term
+[2026-05-14 19:31:51 +1000] [1685] [INFO] Worker exiting (pid: 1685)
+[2026-05-14 19:31:51 +1000] [1691] [INFO] Worker exiting (pid: 1691)
+[2026-05-14 19:31:51 +1000] [1699] [INFO] Worker exiting (pid: 1699)
+[2026-05-14 19:32:07 +1000] [1232] [INFO] Shutting down: Master
+[2026-05-14 19:32:52 +1000] [1241] [INFO] Starting gunicorn 23.0.0
+[2026-05-14 19:32:52 +1000] [1241] [INFO] Listening at: http://0.0.0.0:5004 (1241)
+[2026-05-14 19:32:52 +1000] [1241] [INFO] Using worker: sync
+[2026-05-14 19:32:52 +1000] [1784] [INFO] Booting worker with pid: 1784
+[2026-05-14 19:32:52 +1000] [1804] [INFO] Booting worker with pid: 1804
+[2026-05-14 19:32:52 +1000] [1802] [INFO] Booting worker with pid: 1802
+[2026-06-18 20:28:08 +1000] [1241] [INFO] Handling signal: term
+[2026-06-18 20:28:08 +1000] [1802] [INFO] Worker exiting (pid: 1802)
+[2026-06-18 20:28:09 +1000] [1804] [INFO] Worker exiting (pid: 1804)
+[2026-06-18 20:28:09 +1000] [1784] [INFO] Worker exiting (pid: 1784)
+[2026-06-18 20:28:31 +1000] [1241] [INFO] Shutting down: Master
+[2026-06-18 20:29:12 +1000] [1238] [INFO] Starting gunicorn 23.0.0
+[2026-06-18 20:29:12 +1000] [1238] [INFO] Listening at: http://0.0.0.0:5004 (1238)
+[2026-06-18 20:29:12 +1000] [1238] [INFO] Using worker: sync
+[2026-06-18 20:29:12 +1000] [1644] [INFO] Booting worker with pid: 1644
+[2026-06-18 20:29:12 +1000] [1661] [INFO] Booting worker with pid: 1661
+[2026-06-18 20:29:12 +1000] [1673] [INFO] Booting worker with pid: 1673
