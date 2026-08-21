@@ -66,6 +66,7 @@ If there are changes on both sides they have to be resolved.
 
 Github authentication is via personal access token, it must be renewed every so often.
 cd /srv and do git remote -v to see the personal access tokens.
+The token is stored in my home directory so not part of this repo.
 
 All apps are run from their apps directory and are linked to via tools.html
 
