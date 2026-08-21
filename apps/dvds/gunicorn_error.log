@@ -517,3 +517,25 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/
 [2026-06-18 20:29:12 +1000] [1644] [INFO] Booting worker with pid: 1644
 [2026-06-18 20:29:12 +1000] [1661] [INFO] Booting worker with pid: 1661
 [2026-06-18 20:29:12 +1000] [1673] [INFO] Booting worker with pid: 1673
+[2026-07-16 19:46:48 +1000] [1238] [INFO] Handling signal: term
+[2026-07-16 19:46:48 +1000] [1644] [INFO] Worker exiting (pid: 1644)
+[2026-07-16 19:46:48 +1000] [1661] [INFO] Worker exiting (pid: 1661)
+[2026-07-16 19:46:48 +1000] [1673] [INFO] Worker exiting (pid: 1673)
+[2026-07-16 19:47:15 +1000] [1238] [INFO] Shutting down: Master
+[2026-07-16 19:47:51 +1000] [1256] [INFO] Starting gunicorn 23.0.0
+[2026-07-16 19:47:51 +1000] [1256] [INFO] Listening at: http://0.0.0.0:5004 (1256)
+[2026-07-16 19:47:51 +1000] [1256] [INFO] Using worker: sync
+[2026-07-16 19:47:51 +1000] [1705] [INFO] Booting worker with pid: 1705
+[2026-07-16 19:47:51 +1000] [1720] [INFO] Booting worker with pid: 1720
+[2026-07-16 19:47:51 +1000] [1714] [INFO] Booting worker with pid: 1714
+[2026-08-13 20:56:30 +1000] [1256] [INFO] Handling signal: term
+[2026-08-13 20:56:30 +1000] [1714] [INFO] Worker exiting (pid: 1714)
+[2026-08-13 20:56:30 +1000] [1705] [INFO] Worker exiting (pid: 1705)
+[2026-08-13 20:56:30 +1000] [1720] [INFO] Worker exiting (pid: 1720)
+[2026-08-13 20:56:53 +1000] [1256] [INFO] Shutting down: Master
+[2026-08-13 20:57:33 +1000] [1235] [INFO] Starting gunicorn 23.0.0
+[2026-08-13 20:57:33 +1000] [1235] [INFO] Listening at: http://0.0.0.0:5004 (1235)
+[2026-08-13 20:57:33 +1000] [1235] [INFO] Using worker: sync
+[2026-08-13 20:57:33 +1000] [1653] [INFO] Booting worker with pid: 1653
+[2026-08-13 20:57:33 +1000] [1667] [INFO] Booting worker with pid: 1667
+[2026-08-13 20:57:33 +1000] [1682] [INFO] Booting worker with pid: 1682
