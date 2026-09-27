@@ -539,3 +539,14 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/dvds/
 [2026-08-13 20:57:33 +1000] [1653] [INFO] Booting worker with pid: 1653
 [2026-08-13 20:57:33 +1000] [1667] [INFO] Booting worker with pid: 1667
 [2026-08-13 20:57:33 +1000] [1682] [INFO] Booting worker with pid: 1682
+[2026-09-17 20:12:11 +1000] [1235] [INFO] Handling signal: term
+[2026-09-17 20:12:11 +1000] [1653] [INFO] Worker exiting (pid: 1653)
+[2026-09-17 20:12:11 +1000] [1682] [INFO] Worker exiting (pid: 1682)
+[2026-09-17 20:12:11 +1000] [1667] [INFO] Worker exiting (pid: 1667)
+[2026-09-17 20:12:31 +1000] [1235] [INFO] Shutting down: Master
+[2026-09-17 20:13:12 +1000] [1221] [INFO] Starting gunicorn 23.0.0
+[2026-09-17 20:13:12 +1000] [1221] [INFO] Listening at: http://0.0.0.0:5004 (1221)
+[2026-09-17 20:13:12 +1000] [1221] [INFO] Using worker: sync
+[2026-09-17 20:13:12 +1000] [1655] [INFO] Booting worker with pid: 1655
+[2026-09-17 20:13:12 +1000] [1668] [INFO] Booting worker with pid: 1668
+[2026-09-17 20:13:12 +1000] [1688] [INFO] Booting worker with pid: 1688
